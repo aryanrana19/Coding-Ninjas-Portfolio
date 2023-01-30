@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <img src="pro.jpeg" alt="user">
+        </div>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#" id="portfolio-list">Portfolio</a></li>
+            <li><a href="#" id="personal-blog-list">Personal Blog</a></li>
+            <li><a href="#" id="open2">Contact me</a></li>
+        </ul>
+    </nav>
+        <header>
+            <button id="toggle" class="toggle">
+                <i class="fa fa-bars fa-2x"></i>
+            </button>
+            <h1>My Portfolio</h1>
+            <img class="pro" src="IMG_20230122_015906_758.jpg" alt="profile">
+            <h3 class="name">Aryan Rana</h3>
+            <small class="small">Student at University of Petroleum & Energy Studies</small>
+            <p>I am an enthusiastic person, I love to dream big and one day I would make my parent's name proud!</p>
+            
+        <button class="cta-btn" id="open">Contact Me</button>
+        </header>
+
+        <div class="container">
+            <h2>Used by my Hands & Mind</h2>
+            <ul>
+                <li>HTML5</li>
+                <li>CSS</li>
+                <li>Javascript</li>
+                <li>Adobe Photoshop</li>
+                <li>Adobe Premiere Pro</li>
+                <li>Adobe After Effects</li>
+            </ul>
+            <div class="education">
+            <h2>Education</h2>
+            <div class="edu school">
+            <h3 class="edu-title">Schooling</h3>
+            <!-- <br> -->
+            <p class="edu-para">I've been studying in Cambridge International School Kullu for 11 years i.e, 2011 to 2022. I've been participating in all the extra curricular activities like Western song competition, District Level Mimes, play and science congresses.</p>
+            <h3 class="edu-title">Graduation</h3>
+            <!-- <br> -->
+            <p class="edu-para">I started my college journey in August 2022 in University of Petroleum & Energy Studies, Dehradun. Let's see what god has packed in for me here.</p>
+            </div>
+            </div>
+        </div>
+
+        <!-- MODAL -->
+        <div class="modal-container" id="modal">
+            <div class="modal">
+                <button class="close-btn" id="close"><i class="fa fa-x"></i></button>
+                <div class="modal-header">
+                    <h3>Sign Up</h3>
+                </div>
+                <div class="modal-content">
+                    <p>Now that you've clicked me, I'm open to suggestions</p>
+                    <form class="modal-form">
+                        <div>
+                            <label for="name">Name</label>
+                            <input type="text" id="name" placeholder="Enter Name" class="form-input">
+                        </div>
+                        <div>
+                            <label for="email">Email</label>
+                            <input type="email" id="email" placeholder="Enter Email" class="form-input">
+                        </div>
+                        <div>
+                            <label for="textbox">How did you like my portfolio?</label>
+                            <input type="text" id="text" placeholder="Come on!" class="form-input">
+                        </div>
+                        <!-- <div>
+                            <label for="password">Password</label>
+                            <input type="password" id="password" placeholder="Enter Password" class="form-input">
+                        </div>
+                        <div>
+                            <label for="confirm password">Confirm Password</label>
+                            <input type="password" id="confirm-password" placeholder="Confirm Password" class="form-input">
+                        </div> -->
+                        <input type="submit" value="Submit" class="submit-btn">
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="personal-container" id="personal-blog">
+            <div class="personal-blog">
+                <button class="close-btn" id="closeit"><i class="fa fa-x"></i></button>
+                <div class="modal-header">
+                    <h3>Personal Blog   </h3>
+                </div>
+                <div class="personal-content">
+                    <h3>History</h3>
+                    <br>
+                    <p>Born in 2004 in Lucknow, Uttar Pradesh. Basically I am from Tehri Garhwal Uttarkhand and I've been living in Kullu Himachal Pradesh for 13 years. I completed my schooling from Himachal itself. I love mountains and I want to settle here itself as it is too peaceful and quiet.</p>
+                    <br>
+                    <h3>Qualifications</h3>
+                    <br>
+                    <p>Completed 10th class from Cambridge International School Kullu in 2020 with 93%. Completed 12th with 85% and currently studying in UPES Dehradun.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="portfolio-container" id="portfolio">
+            <div class="portfolio">
+                <button class="close-btn" id="close-portfolio"><i class="fa fa-x"></i></button>
+                <div class="modal-header">
+                    <h3>Portfolio</h3>
+                </div>
+                <div class="portfolio-content">
+                    <h3>My Portfolio</h3>
+                    <img src="pro.jpeg" alt="pro" width="150px">
+                    <h4>Aryan Rana</h4>
+                    <small>Student at University of Petroleum & Energy Studies</small>
+                    <p>I like to play Games, listen music, play piano and solve rubiks cube.</p>
+                </div>
+            </div>
+        </div>
+    <script src="app.js"></script>
+</body>
+</html>
